@@ -1,7 +1,8 @@
 # Z83-1-Intel-Mini-Pc-FW 
 
-Z83(BZW-BT3)
-                              "Stability"
+        Z83(BZW-BT3)
+                        "Stability"
+
 
 first append to /etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT="intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0 " entries
 
