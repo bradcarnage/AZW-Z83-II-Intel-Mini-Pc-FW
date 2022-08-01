@@ -1,8 +1,25 @@
 # Z83-1-Intel-Mini-Pc-FW 
 
 Z83(BZW-BT3)
+                              "Stability"
 
-Bluetooth Installation/Fix:
+first append to /etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT="intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0 " entries
+
+than regenerate grub config in common way 
+
+or edit manually 
+
+/boot/grub/grub.cfg 
+
+by adding "intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0" entries after vmlinuz (....) root=...
+
+if systemd-boot is installed bootloader edit commandline last entry in any file in 
+
+/boot/efi/loader/entries/*.conf
+
+by adding "intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0"
+
+                              "Bluetooth Installation/Fix"
 
 copy firmware files from this repo to /lib/firmware/brcm/
 
@@ -23,13 +40,10 @@ sudo btmgmt -i hci0 public-addr 43:34:1b:00:1a:ac ///for example
 
 bluetooth should be in tray now (tested on blueman-applet)
 
-
-
-https://lkml.iu.edu/hypermail/linux/kernel/1904.1/01727.html
-
+                        "Hardware codecs"
 also install intel-hybrid-driver for vp 8 / 9  vaapi codecs
 
-localhost:~> vainfo
+'localhost:~> vainfo
 libva info: VA-API version 1.15.0
 libva info: Trying to open /usr/lib64/dri/i965_drv_video.so
 libva info: Found init function __vaDriverInit_1_14
@@ -60,4 +74,9 @@ vainfo: Supported profile and entrypoints
       VAProfileVP8Version0_3          :	VAEntrypointVLD
       VAProfileVP8Version0_3          :	VAEntrypointEncSlice
       VAProfileHEVCMain               :	VAEntrypointVLD
-      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile0            :	VAEntrypointVLD'
+      
+      
+      
+https://lkml.iu.edu/hypermail/linux/kernel/1904.1/01727.html
+      
