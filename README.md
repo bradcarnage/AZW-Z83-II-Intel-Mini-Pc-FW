@@ -4,7 +4,7 @@ Bluetotth:
 
 install package bluez-test ( subpackage btmgmt)
 
-then set not default bt adapter mac adres
+then set not default bt adapter mac address
 
 sudo btmgmt -i hci0 public-addr 43:34:1b:00:1a:ac for example
 
