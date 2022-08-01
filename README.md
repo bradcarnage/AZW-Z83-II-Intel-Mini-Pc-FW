@@ -44,37 +44,10 @@ bluetooth should be in tray now (tested on blueman-applet)
                         "Hardware codecs"
 also install intel-hybrid-driver for vp 8 / 9  vaapi codecs
 
-'localhost:~> vainfo
-libva info: VA-API version 1.15.0
-libva info: Trying to open /usr/lib64/dri/i965_drv_video.so
-libva info: Found init function __vaDriverInit_1_14
-libva info: va_openDriver() returns 0
-vainfo: VA-API version: 1.15 (libva 2.15.0)
-vainfo: Driver version: Intel i965 driver for Intel(R) CherryView - 2.4.1
-vainfo: Supported profile and entrypoints
-      VAProfileMPEG2Simple            :	VAEntrypointVLD
-      VAProfileMPEG2Simple            :	VAEntrypointEncSlice
-      VAProfileMPEG2Main              :	VAEntrypointVLD
-      VAProfileMPEG2Main              :	VAEntrypointEncSlice
-      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
-      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
-      VAProfileH264Main               :	VAEntrypointVLD
-      VAProfileH264Main               :	VAEntrypointEncSlice
-      VAProfileH264High               :	VAEntrypointVLD
-      VAProfileH264High               :	VAEntrypointEncSlice
-      VAProfileH264MultiviewHigh      :	VAEntrypointVLD
-      VAProfileH264MultiviewHigh      :	VAEntrypointEncSlice
-      VAProfileH264StereoHigh         :	VAEntrypointVLD
-      VAProfileH264StereoHigh         :	VAEntrypointEncSlice
-      VAProfileVC1Simple              :	VAEntrypointVLD
-      VAProfileVC1Main                :	VAEntrypointVLD
-      VAProfileVC1Advanced            :	VAEntrypointVLD
-      VAProfileNone                   :	VAEntrypointVideoProc
-      VAProfileJPEGBaseline           :	VAEntrypointVLD
-      VAProfileJPEGBaseline           :	VAEntrypointEncPicture
-      VAProfileVP8Version0_3          :	VAEntrypointVLD
-      VAProfileVP8Version0_3          :	VAEntrypointEncSlice
-      VAProfileHEVCMain               :	VAEntrypointVLD
+
+vainfo repports additionaly
+
+
       VAProfileVP9Profile0            :	VAEntrypointVLD'
       
       
