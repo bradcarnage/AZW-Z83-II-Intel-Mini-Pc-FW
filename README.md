@@ -28,7 +28,7 @@ make copy BCM43341B0.hcd to BCM.hcd in /lib/firmware/brcm/
 
 sudo cp /lib/firmware/brcm/BCM43341B0.hcd /lib/firmware/brcm/BCM.hcd
 
-install package: "bluez-test" (for btmgmt) 
+install package: "bluez-test" (for btmgmt) / on Arch Linux : bluez bluez-tools bluez-utils
 
 opensuse :
 
