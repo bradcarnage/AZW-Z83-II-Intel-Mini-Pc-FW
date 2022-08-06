@@ -1,6 +1,0 @@
-[Timer]
-OnBootSec=1m
-Unit=bluetooth-mac.service
-[Install]
-WantedBy=default.target
-RequiredBy=bluetooth-mac.service
