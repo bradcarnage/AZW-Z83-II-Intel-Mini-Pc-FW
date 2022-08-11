@@ -4,7 +4,7 @@
                         "Stability"
 
 
-first append to /etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT="intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0 " entries
+first append to /etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT="intel_idle.max_cstate=0 processor.max_cstate=1 " entries
 
 than regenerate grub config in common way 
 
@@ -12,7 +12,7 @@ or edit manually
 
 /boot/grub/grub.cfg 
 
-by adding "intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0" entries after vmlinuz (....) root=...
+by adding "intel_idle.max_cstate=0 processor.max_cstate=1" entries after vmlinuz (....) root=...
 
 if systemd-boot is installed bootloader edit commandline last entry in any file in 
 
