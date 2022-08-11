@@ -18,7 +18,7 @@ if systemd-boot is installed bootloader edit commandline last entry in any file 
 
 /boot/efi/loader/entries/*.conf
 
-by adding "intel_idle.max_cstate=1 systemd.restore_state=0 rfkill.default_state=0"
+by adding "intel_idle.max_cstate=0 processor.max_cstate=1"
 
                               "Bluetooth Installation/Fix"
 
