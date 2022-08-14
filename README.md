@@ -1,3 +1,7 @@
+
+
+<img width="964" alt="screen" src="https://github.com/devegoo/Z83-1-Intel-Mini-Pc-FW/blob/main/screen.jpg">
+
 # Z83-1-Intel-Mini-Pc-FW 
 
         Z83(BZW-BT3)
