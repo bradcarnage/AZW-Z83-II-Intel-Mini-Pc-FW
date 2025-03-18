@@ -1,6 +1,6 @@
 
 
-<img width="964" alt="screen" src="https://github.com/devegoo/Z83-1-Intel-Mini-Pc-FW/blob/main/screen.jpg">
+<img width="964" alt="screen" src="https://github.com/bradcarnage/AZW-Z83-II-Intel-Mini-Pc-FW/blob/main/screen.png">
 
 # Z83-1-Intel-Mini-Pc-FW 
 
